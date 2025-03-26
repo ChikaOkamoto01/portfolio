@@ -2,56 +2,16 @@
 
 @import 'tailwindcss';
 
-@theme {
-    --background-image-noise: linear-gradient(
-            to bottom,
-            color-mix(in oklab, var(--color-neutral-200) 0%, transparent),
-            color-mix(in oklab, var(--color-neutral-200) 100%, transparent)
-        ),
-        url('/images/noise.png');
-    --color-primary: #4A5568;      /* グレー基調のプライマリカラー */
-    --color-primary-content: #FFFFFF;
-    --color-secondary: #718096;    /* グレー基調のセカンダリカラー */
-    --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
-        'Noto Color Emoji';
-}
-@layer base {
-    h1 {
-        @apply text-4xl font-bold tracking-tight sm:text-5xl;
-    }
 
-    h2 {
-        @apply text-2xl font-bold sm:text-3xl;
-    }
-
-    h3 {
-        @apply text-xl font-bold;
-    }
-
-    a:not(.btn) {
-        @apply underline transition hover:opacity-80;
-    }
-
-    :not(pre) > code {
-        @apply px-1 py-0.5 font-mono rounded bg-neutral-900 text-yellow-200;
-        font-size: 0.9em;
-    }
-}
 
 @layer components {
     .btn {
-        @apply inline-flex items-center justify-center gap-2 font-bold text-center no-underline transition-colors cursor-pointer bg-primary text-primary-content;
+
         padding: var(--btn-py, 0.875rem) var(--btn-px, 1.25rem);
         font-size: var(--btn-font-size, 0.875rem);
         border-radius: var(--btn-border-radius, 0.25rem);
 
-        &:hover {
-            @apply bg-primary/85;
-        }
 
-        &:disabled {
-            @apply cursor-default text-neutral-400 bg-neutral-700;
-        }
     }
 
     .btn-lg {
@@ -60,13 +20,10 @@
         --btn-py: 1.125rem;
     }
 
-    .input {
-        @apply px-4 py-3 text-sm border rounded-sm border-neutral-300 text-neutral-900 focus:border-primary focus:outline-3 focus:outline-primary/30;
-    }
+
 
     .diff {
         direction: ltr;
-        container-type: inline-size;
         grid-template-columns: auto 1fr;
 
         &:focus-visible,
