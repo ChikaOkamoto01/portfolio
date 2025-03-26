@@ -1,4 +1,4 @@
-import { Markdown } from 'components/markdown';
+
 
 export const metadata = {
     title: 'Fallback'
@@ -19,7 +19,7 @@ export default function FallbackPage() {
     return (
         <>
             <h1 className="mb-8">You&apos;ve reached the fallback page.</h1>
-            <Markdown content={explainer} />
+
         </>
     );
 }
