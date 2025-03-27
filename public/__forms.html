@@ -6,11 +6,11 @@
         <title>Contact Form</title>
     </head>
     <body>
-        <form name="contact" method="POST" data-netlify="true" hidden>
+        <form name="contact" netlify netlify-honeypot="bot-field" hidden>
             <input type="hidden" name="form-name" value="contact" />
-            <input name="name" type="text" />
-            <input name="email" type="text" />
-            <textarea name="message" type="text" ></textarea>
+            <input name="name" type="text" required />
+            <input name="email" type="email" required />
+            <textarea name="message" required></textarea>
         </form>
     </body>
     

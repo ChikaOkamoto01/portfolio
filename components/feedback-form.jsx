@@ -17,29 +17,28 @@ export function FeedbackForm() {
             const myForm = event.target;
             const formData = new FormData(myForm);
             
-            console.log('送信開始:', formData); // デバッグ用
+            console.log('送信開始:', Object.fromEntries(formData));
 
             const res = await fetch('/', {
                 method: 'POST',
-                headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+                headers: { 
+                    'Content-Type': 'application/x-www-form-urlencoded',
+                    'Accept': 'application/json'
+                },
                 body: new URLSearchParams(formData).toString()
             });
             
-            console.log('送信結果:', res); // デバッグ用
-
             if (res.ok) {
                 setStatus('ok');
-                event.target.reset(); // フォームをクリア
-                console.log('送信成功'); // デバッグ用
+                event.target.reset();
+                console.log('送信成功');
             } else {
-                setStatus('error');
-                setError(`送信に失敗しました`);
-                console.error('送信エラー:', res.status, res.statusText); // デバッグ用
+                throw new Error(`${res.status}: ${res.statusText}`);
             }
         } catch (e) {
-            console.error('エラー詳細:', e); // デバッグ用
+            console.error('エラー詳細:', e);
             setStatus('error');
-            setError(`エラーが発生しました: ${e}`);
+            setError(`送信に失敗しました: ${e.message}`);
         }
     };
 
@@ -50,8 +49,7 @@ export function FeedbackForm() {
                     name="contact" 
                     method="POST"
                     data-netlify="true"
-                    action="/contact"
-                    netlify-honeypot="bot-field"
+                    netlify
                     onSubmit={handleFormSubmit} 
                     className="flex flex-col gap-3 align-center"
                 >
