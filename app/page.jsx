@@ -188,24 +188,6 @@ export default function Page() {
                     </div>
                 </div>
             </section>
-
-            {/* 資格 */}
-            <section className="border-b pb-6">
-                <h2 className="flex items-center text-2xl font-bold mb-4">
-                    <i className="fas fa-certificate mr-3"></i>
-                    資格
-                </h2>
-                <div className="prose dark:prose-invert">
-                <ul>
-                    <li>基本情報技術者試験</li>
-                    <li>AZ-900 Microsoft Azure Fundamenta士ls</li>
-                    <li>学芸員（芸術）</li>
-                    <li>社会教育士</li>
-                    <li>高等学校教諭 一種（数学科）</li>
-                    <li>中学校教諭 一種（数学科）</li>
-                </ul>
-                </div>
-            </section>
         </div>
     );
 }
