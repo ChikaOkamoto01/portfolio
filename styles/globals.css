@@ -6,12 +6,15 @@
 
 @layer components {
     .btn {
-
         padding: var(--btn-py, 0.875rem) var(--btn-px, 1.25rem);
         font-size: var(--btn-font-size, 0.875rem);
         border-radius: var(--btn-border-radius, 0.25rem);
-
-
+        display: inline-block;
+        width: fit-content;
+        cursor: pointer;
+        -webkit-user-select: none;
+        user-select: none;
+        text-align: center;
     }
 
     .btn-lg {
@@ -20,7 +23,10 @@
         --btn-py: 1.125rem;
     }
 
-
+    .btn:disabled {
+        cursor: not-allowed;
+        opacity: 0.6;
+    }
 
     .diff {
         direction: ltr;
