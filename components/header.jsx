@@ -3,8 +3,9 @@ import Link from 'next/link';
 
 const navItems = [
     { linkText: 'Home', href: '/' },
-    { linkText: 'blog', href: '/blog' },
+    { linkText: 'skills', href: '/skills' },
     { linkText: 'works', href: '/works' },
+    { linkText: 'blog', href: '/blog' },
     { linkText: 'contact', href: '/contact' }
 ];
 
