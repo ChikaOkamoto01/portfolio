@@ -6,11 +6,12 @@
         <title>Contact Form</title>
     </head>
     <body>
-        <form name="feedback" data-netlify="true" hidden>
-            <input type="hidden" name="form-name" value="feedback" />
+        <form name="contact" method="POST" data-netlify="true" hidden>
+            <input type="hidden" name="form-name" value="contact" />
             <input name="name" type="text" />
             <input name="email" type="text" />
-            <input name="message" type="text" />
+            <textarea name="message" type="text" ></textarea>
         </form>
     </body>
+    
 </html>
