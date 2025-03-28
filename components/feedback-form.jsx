@@ -49,7 +49,7 @@ export function FeedbackForm() {
                     name="contact" 
                     method="POST"
                     data-netlify="true"
-                    netlify
+                    netlify = "true"
                     onSubmit={handleFormSubmit} 
                     className="flex flex-col gap-3 align-center"
                 >
