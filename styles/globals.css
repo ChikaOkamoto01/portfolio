@@ -15,6 +15,14 @@
         -webkit-user-select: none;
         user-select: none;
         text-align: center;
+        background-color: #6B7280;  /* グレー色 */
+        color: white;  /* テキストを白に */
+        border: none;  /* ボーダーを削除 */
+        transition: background-color 0.2s;  /* ホバー時のアニメーション */
+    }
+
+    .btn:hover {
+        background-color: #4B5563;  /* ホバー時は少し濃いグレー */
     }
 
     .btn-lg {
@@ -26,6 +34,7 @@
     .btn:disabled {
         cursor: not-allowed;
         opacity: 0.6;
+        background-color: #9CA3AF;  /* 無効時は薄いグレー */
     }
 
     .diff {
@@ -97,5 +106,38 @@
             left: 0;
             pointer-events: none;
         }
+    }
+
+    /* ポートフォリオ用の新しいスタイル */
+    .portfolio-card {
+        @apply bg-white rounded-lg shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105;
+    }
+
+    .portfolio-image {
+        @apply w-full h-48 object-cover;
+    }
+
+    .portfolio-content {
+        @apply p-6;
+    }
+
+    .portfolio-title {
+        @apply text-xl font-bold text-gray-800 mb-2;
+    }
+
+    .portfolio-description {
+        @apply text-gray-600 mb-4;
+    }
+
+    .portfolio-tags {
+        @apply flex flex-wrap gap-2 mb-4;
+    }
+
+    .portfolio-tag {
+        @apply px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm;
+    }
+
+    .portfolio-link {
+        @apply inline-flex items-center text-blue-600 hover:text-blue-800 transition-colors;
     }
 }
