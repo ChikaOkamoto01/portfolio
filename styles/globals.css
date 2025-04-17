@@ -138,6 +138,6 @@
     }
 
     .portfolio-link {
-        @apply inline-flex items-center text-blue-600 hover:text-blue-800 transition-colors;
+        @apply inline-flex items-center text-black hover:text-blue-800 transition-colors;
     }
 }
