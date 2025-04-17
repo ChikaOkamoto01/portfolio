@@ -33,7 +33,7 @@ export default function Page() {
                     <p>
                     <span className="font-bold">学びにイノベーションを。</span><br/>
                     行政、ITエンジニアリング、教育実践の各分野で培った経験を活かし、<br/>
-                    学生の挑戦を支えるアントレプレナーシップ教育プログラムをデザインしています。<br/>
+                    大学にて学生の挑戦を支えるアントレプレナーシップ教育プログラムをデザインしています。<br/>
                     実践知と多様な視点を活かし、学びの場そのものをアップデートし、研究することを目指しています。
                     </p>
                 </div>
@@ -149,7 +149,6 @@ export default function Page() {
                     <div>
                         <div className="flex items-baseline gap-2">
                             <span className="text-gray-600">2020.04.01～2021.12.31</span>
-                            <span className="text-gray-600">2022.01.01～2023.08.31</span>
                             <a 
                                 href="https://www.city.kobe.lg.jp/" 
                                 target="_blank" 
