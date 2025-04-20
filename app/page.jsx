@@ -109,7 +109,7 @@ export default function Page() {
                             </a>
                         </div>
                         <div className="ml-6 mt-1 text-gray-800">
-                        Business ＆ Technology Advisor
+                        Business＆Technology Advisor
                         </div>
                     </div>
                     <div>
