@@ -59,7 +59,7 @@ export default function Page() {
                     <div>
                         <div className="flex items-baseline gap-2">
                             <a 
-                                href="#" 
+                                href="https://entrepreneurship-center.chiba-u.jp/" 
                                 target="_blank" 
                                 rel="noopener noreferrer" 
                                 className="font-bold portfolio-link"
