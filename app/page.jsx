@@ -101,7 +101,7 @@ export default function Page() {
                         <div className="flex items-baseline gap-2">
                             <span className="text-gray-600">2024.12.01～2025.03.31</span>
                             <a 
-                                href="https://startup-lab.chiba-u.jp/" 
+                                href="https://imo.chiba-u.jp/" 
                                 target="_blank" 
                                 rel="noopener noreferrer" 
                                 className="font-bold portfolio-link"

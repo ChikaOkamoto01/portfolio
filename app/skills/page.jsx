@@ -58,7 +58,7 @@ export default async function Page() {
                             資格
                         </h3>
                         <ul className="grid grid-cols-2 md:grid-cols-3 gap-3">
-                            <li className="p-2 bg-gray-100 rounded">基本情報技術者試験</li>
+                            <li className="p-2 bg-gray-100 rounded">IPA 基本情報技術者</li>
                             <li className="p-2 bg-gray-100 rounded">AZ-900 Microsoft Azure Fundamentals</li>
                         </ul>
                     </div>
