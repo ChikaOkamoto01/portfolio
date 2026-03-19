@@ -32,8 +32,8 @@ export default function Page() {
                 <div className="prose dark:prose-invert space-y-6">
                     <p>
                     <span className="font-bold">学びにイノベーションを。</span><br/>
-                    行政、ITエンジニアリング、教育実践の各分野で培った経験を活かし、<br/>
-                    大学にて学生の挑戦を支えるアントレプレナーシップ教育プログラムをデザインしています。<br/>
+                    公共行政、IT、教育の各領域で培った知見を統合し、<br/>
+                    大学にて学生の主体的な挑戦を促すアントレプレナーシップ教育プログラムを構築しています。<br/>
                     実践知と多様な視点を活かし、学びの場そのものをアップデートし、研究することを目指しています。
                     </p>
                 </div>
@@ -71,21 +71,6 @@ export default function Page() {
                         URA（リサーチ・アドミニストレータ）
                         </div>
                     </div>
-                    <div>
-                        <div className="flex items-baseline gap-2">
-                            <a 
-                                href="https://aeolia.co.jp/" 
-                                target="_blank" 
-                                rel="noopener noreferrer" 
-                                className="font-bold portfolio-link"
-                            >
-                            <span className="font-bold">■イオリア株式会社</span>
-                            </a>
-                        </div>
-                        <div className="ml-6 mt-1 text-gray-800">
-                            エンジニア
-                        </div>
-                    </div>
                 </div>
             </section>
 
@@ -96,6 +81,22 @@ export default function Page() {
                     職歴
                 </h2>
                 <div className="prose dark:prose-invert space-y-6">
+                    <div>
+                        <div className="flex items-baseline gap-2">
+                            <span className="text-gray-600">2025.02.21～2025.09.11</span>
+                            <a 
+                                href="https://aeolia.co.jp/" 
+                                target="_blank" 
+                                rel="noopener noreferrer" 
+                                className="font-bold portfolio-link"
+                            >
+                            <span className="font-bold">イオリア株式会社</span>
+                            </a>
+                        </div>
+                        <div className="ml-6 mt-1 text-gray-800">
+                        WEBエンジニア
+                        </div>
+                    </div>
                     <div>
                         <div className="flex items-baseline gap-2">
                             <span className="text-gray-600">2024.12.01～2025.03.31</span>
@@ -142,7 +143,7 @@ export default function Page() {
                             </a>
                         </div>
                         <div className="ml-6 mt-1 text-gray-800">
-                            エンジニア/カスタマーサポーター/営業
+                            WEBエンジニア/カスタマーサポーター/営業
                         </div>
                     </div>
 
